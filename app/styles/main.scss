@@ -1,0 +1,47 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.container-fluid--padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-inverse--height {
+  height: 100px;
+}
+
+.navbar__logo-drop {
+  padding: 20px 30px;
+  color: #fff; 
+  display: flex; 
+  justify-content: space-between;
+}
+
+.dropdown__button {
+  background-color: #000;
+  border-color: transparent;
+  color: #fff;
+
+  &:hover,
+  &:active {
+    background-color: #000;
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
+.dropdown-menu {
+  
+  &--content{
+    width: 100%;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin: 20px 0 0;
+  }
+
+  &--li {
+    padding: 10px 20px;
+  }
+}
