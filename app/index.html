@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>stylerz contabilidad</title>
+    <title>Stylerz - Contabilidad</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -32,6 +32,7 @@
       <!-- Nav -->
       <nav class="navbar navbar-inverse navbar-inverse--height">
         <div class="row">
+
           <div class="col-md-12">
             <div class="navbar__logo-drop">
               <div>
@@ -84,9 +85,217 @@
               </div>
             </div>
           </div>
+
         </div>
       </nav>
+
+      <section>
+        <div class="row">
+
+          <div class="col-md-3" style="border-right: 3px solid black">
+            <h1>Contabilidad</h1>
+          </div>
+
+          <div class="col-md-9">
+
+            <section>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>Tarjeta de Crédito</h3>
+                  <p>
+                    Agrega los datos de tu tarjeta de crédito para que sea más rápido y fácil el proceso de cobro a tu negocio.
+                  </p>
+                  <p>
+                    <strong>Seguridad Garantizada:</strong> 
+                    Los procesos están avalados por diversas certificaciones y auditorías para garantizar que la información se mantenga
+                    segura y encriptada. 
+                  </p>
+                  <hr class="separator" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <h4>Nombres</h4>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Nombres"
+                    >
+                </div>
+                <div class="col-md-4">
+                  <h4>Apellidos</h4>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Apellidos"
+                    >
+                </div>
+                <div class="col-md-4">
+                  <h4>Email</h4>
+                  <input 
+                    type="email" 
+                    class="form-control" 
+                    placeholder="Email"
+                    >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h4>Dirección</h4>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Dirección"
+                    >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <h4>País</h4>
+                  <div class="form-group">
+                    <select class="form-control" id="exampleSelect1">
+                      <option>País</option>
+                      <option>México</option>
+                      <option>Cuba</option>
+                      <option>Venezuela</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h4>Ciudad</h4>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Ciudad"
+                    >
+                </div>
+                <div class="col-md-4">
+                  <h4>Teléfono</h4>
+                  <input 
+                    type="number" 
+                    class="form-control" 
+                    placeholder="Teléfono"
+                    >
+                </div>
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-md-6">
+                  <h4>Número de Tarjeta</h4>
+                  <input 
+                    type="number" 
+                    class="form-control" 
+                    placeholder="0000-0000-0000-0000"
+                    >
+                </div>
+                <div class="col-md-6">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio">
+                    <img src="images/visa.png">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h4>Fecha de expiración</h4>
+                      <div>
+                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                      </div>
+                    </div>
+                    <div class="col-md-4 offset-md-2">
+                      <div class="form-group">
+                        <select class="form-control" id="exampleSelect1">
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h4>Código de seguridad</h4>
+                      <input 
+                        type="number" 
+                        class="form-control" 
+                        placeholder="Teléfono"
+                        >
+                    </div>
+                    <div class="col-md-4">
+                      <p>¿Que es esto?</p>
+                    </div> 
+                  </div>
+                </div>   
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-right">
+                  <button class="button-pink">GUARDAR</button>
+                  <button class="button-pink">SIGUIENTE</button>
+                </div>
+              </div>
+            </section>
+            
+            <section style="display: none;">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseOne" 
+                        aria-expanded="true" 
+                        aria-controls="collapseOne"
+                        >
+                        Datos de Facturación
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a 
+                        class="collapsed" 
+                        role="button" 
+                        data-toggle="collapse" 
+                        data-parent="#accordion" 
+                        href="#collapseTwo" 
+                        aria-expanded="false" 
+                        aria-controls="collapseTwo"
+                        >
+                        Datos Bancarios
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+        </div>
+      </section>
+
     </div>
+
+    
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

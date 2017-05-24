@@ -1,8 +1,13 @@
 $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+@import "general.scss";
+@import "credit-card.scss";
 // endbower
 
+
+// browser
 .container-fluid--padding {
   padding-left: 0;
   padding-right: 0;
@@ -13,7 +18,7 @@ $icon-font-path: '../fonts/';
 }
 
 .navbar__logo-drop {
-  padding: 20px 30px;
+  padding: 30px 30px;
   color: #fff; 
   display: flex; 
   justify-content: space-between;
@@ -24,8 +29,7 @@ $icon-font-path: '../fonts/';
   border-color: transparent;
   color: #fff;
 
-  &:hover,
-  &:active {
+  &:hover {
     background-color: #000;
     border-color: #fff;
     color: #fff;
@@ -45,3 +49,7 @@ $icon-font-path: '../fonts/';
     padding: 10px 20px;
   }
 }
+
+
+
+
