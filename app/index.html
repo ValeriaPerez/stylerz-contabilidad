@@ -98,7 +98,7 @@
 
           <div class="col-md-9">
 
-            <section>
+            <section style="display: none;">
               <div class="row">
                 <div class="col-md-12">
                   <h3>Tarjeta de Crédito</h3>
@@ -246,7 +246,7 @@
                 <div class="panel panel-default">
                   
                   <div class="panel-heading" role="tab" id="headingOne">
-                    <h5 class="panel-title">
+                    <h3 class="panel-title">
                       <a 
                         role="button" 
                         data-toggle="collapse" 
@@ -257,125 +257,128 @@
                         >
                         Datos de Facturación
                       </a>
-                    </h5>
+                    </h3>
                   </div>
 
-                  <div 
-                    id="collapseOne" 
-                    class="panel-collapse collapse in" 
-                    role="tabpanel" 
-                    aria-labelledby="headingOne"
-                    >
-                    <div class="row panel-body">
-                      <div class="col-md-12">
-                        <p>
-                          Necesitamos estos datos para hacerte la factura de nuestro servicio a fin de mes:
-                        </p>
-                      </div>
-                      <hr class="separator" />
-                      <div class="row panel-body">
-                        <div class="col-md-6">
-                          <h5>Razón Soial</h4>
-                          <input 
-                            type="text" 
-                            class="form-control" 
-                            placeholder="Ej: Tequisco Ventures S.A. de C.V"
-                            >
-                        </div>
-                        <div class="col-md-6">
-                          <h5>RFC</h5>
-                          <input 
-                            type="text" 
-                            class="form-control" 
-                            placeholder="Ej: TVEGHKH5568"
-                            >
-                        </div>
-                      </div>
+                  <section>  
+                    <div 
+                      id="collapseOne" 
+                      class="panel-collapse collapse in" 
+                      role="tabpanel" 
+                      aria-labelledby="headingOne"
+                      >
+
                       <div class="row panel-body">
                         <div class="col-md-12">
-                          <h5>Dirección de Facturación</h5>
+                          <p>
+                            Necesitamos estos datos para hacerte la factura de nuestro servicio a fin de mes:
+                          </p>
                         </div>
-                      </div>
-                      <div class="row panel-body">
-                        <div class="col-md-4">
-                          <h5>Calle</h4>
-                          <input 
-                            type="text" 
-                            class="form-control" 
-                            placeholder="Ej: Tonalá 10"
-                            >
-                        </div>
-                        <div class="col-md-4">
-                          <h5>Número Exterior</h4>
-                          <input 
-                            type="number" 
-                            class="form-control" 
-                            placeholder="Ej: 305"
-                            >
-                        </div>
-                        <div class="col-md-4">
-                          <h5>Número Interior</h4>
-                          <input 
-                            type="number" 
-                            class="form-control" 
-                            placeholder="Ej: 21"
-                            >
-                        </div>
-                      </div>
-                      <div class="row panel-body">
-                        <div class="col-md-4">
-                          <h5>Colonia</h4>
-                          <div class="form-group">
-                            <select class="form-control" id="exampleSelect1">
-                              <option>Colonia</option>
-                              <option>Condesa</option>
-                              <option>Roma</option>
-                              <option>Iztacalco</option>
-                              <option>Centro</option>
-                            </select>
+                        <hr class="separator" />
+                        <div class="row panel-body">
+                          <div class="col-md-6">
+                            <h5>Razón Soial</h5>
+                            <input 
+                              type="text" 
+                              class="form-control" 
+                              placeholder="Ej: Tequisco Ventures S.A. de C.V"
+                              >
+                          </div>
+                          <div class="col-md-6">
+                            <h5>RFC</h5>
+                            <input 
+                              type="text" 
+                              class="form-control" 
+                              placeholder="Ej: TVEGHKH5568"
+                              >
                           </div>
                         </div>
-                        <div class="col-md-4">
-                          <h5>Código Postal</h4>
-                          <input 
-                            type="number" 
-                            class="form-control" 
-                            placeholder="Ej:06700"
-                            >
+                        <div class="row panel-body">
+                          <div class="col-md-12">
+                            <h5>Dirección de Facturación</h5>
+                          </div>
                         </div>
-                        <div class="col-md-4">
-                          <h5>Teléfono</h4>
-                          <input 
-                            type="number" 
-                            class="form-control" 
-                            placeholder="Ej: 556578998"
-                            >
+                        <div class="row panel-body">
+                          <div class="col-md-4">
+                            <h5>Calle</h5>
+                            <input 
+                              type="text" 
+                              class="form-control" 
+                              placeholder="Ej: Tonalá 10"
+                              >
+                          </div>
+                          <div class="col-md-4">
+                            <h5>Número Exterior</h5>
+                            <input 
+                              type="number" 
+                              class="form-control" 
+                              placeholder="Ej: 305"
+                              >
+                          </div>
+                          <div class="col-md-4">
+                            <h5>Número Interior</h5>
+                            <input 
+                              type="number" 
+                              class="form-control" 
+                              placeholder="Ej: 21"
+                              >
+                          </div>
                         </div>
+                        <div class="row panel-body">
+                          <div class="col-md-4">
+                            <h5>Colonia</h5>
+                            <div class="form-group">
+                              <select class="form-control" id="exampleSelect1">
+                                <option>Colonia</option>
+                                <option>Condesa</option>
+                                <option>Roma</option>
+                                <option>Iztacalco</option>
+                                <option>Centro</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <h5>Código Postal</h5>
+                            <input 
+                              type="number" 
+                              class="form-control" 
+                              placeholder="Ej:06700"
+                              >
+                          </div>
+                          <div class="col-md-4">
+                            <h5>Teléfono</h5>
+                            <input 
+                              type="number" 
+                              class="form-control" 
+                              placeholder="Ej: 556578998"
+                              >
+                          </div>
+                        </div>
+                        <div class="row panel-body">
+                          <div class="col-md-12">
+                            <h5>Email de Facturación</h5>
+                            <input 
+                              type="email" 
+                              class="form-control" 
+                              placeholder="Ej: facturación@stylerz.com"
+                              >
+                          </div>
+                        </div>
+                        <div class="row panel-body">
+                          <div class="col-md-12 text-right">
+                            <button class="button-pink">GUARDAR</button>
+                          </div>
+                        </div>  
                       </div>
-                      <div class="row panel-body">
-                        <div class="col-md-12">
-                          <h5>Email de Facturación</h5>
-                          <input 
-                            type="email" 
-                            class="form-control" 
-                            placeholder="Ej: facturación@stylerz.com"
-                            >
-                        </div>
-                      </div>
-                      <div class="row panel-body">
-                        <div class="col-md-12 text-right">
-                          <button class="button-pink">GUARDAR</button>
-                        </div>
-                      </div>  
                     </div>
-                  </div>
+                  </section>  
 
                 </div>
 
                 <div class="panel panel-default">
                   
                   <div class="panel-heading" role="tab" id="headingTwo">
-                    <h5 class="panel-title">
+                    <h3 class="panel-title">
                       <a 
                         class="collapsed" 
                         role="button" 
@@ -387,116 +390,265 @@
                         >
                         Datos Bancarios
                       </a>
-                    </h5>
+                    </h3>
                   </div>
 
-                  <div 
-                    id="collapseTwo" 
-                    class="panel-collapse collapse" 
-                    role="tabpanel" 
-                    aria-labelledby="headingTwo"
-                    >
-                    <div class="row panel-body">
-                      <div class="col-md-12">
-                        <p>
-                          Necesitamos estos datos para hacerte la transferencia quincenal de los clientes que paguen en línea tus servicios
-                        </p>
-                      </div>
-                      <hr class="separator" />
-                      <div class="row panel-body">
-                        <div class="col-md-6">
-                          <h5>Nombre del Banco</h4>
-                          <div class="form-group">
-                            <select class="form-control" id="exampleSelect1">
-                              <option>Nombre del Banco</option>
-                              <option>Banorte</option>
-                              <option>Banamex</option>
-                              <option>Bancomer</option>
-                              <option>Inbursa</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <h5>Titular de la Cuenta <span>(Como aparece en tu Estado de Cuenta)</span></h5>
-                          <input 
-                            type="text" 
-                            class="form-control" 
-                            placeholder="Nombre Titular"
-                            >
-                        </div>
-                      </div>
-                      <div class="row panel-body">
-                        <div class="col-md-6">
-                          <h5>Razón Soial</h4>
-                          <input 
-                            type="text" 
-                            class="form-control" 
-                            placeholder="Ej: Tequisco Ventures S.A. de C.V"
-                            >
-                        </div>
-                        <div class="col-md-6">
-                          <h5>RFC</h5>
-                          <input 
-                            type="text" 
-                            class="form-control" 
-                            placeholder="Ej: TVEGHKH5568"
-                            >
-                        </div>
-                      </div>
-                      <div class="row panel-body">
-                        <div class="col-md-6">
-                          <h5>Clabe</h4>
-                          <input 
-                            type="number" 
-                            class="form-control" 
-                            placeholder="Clabe"
-                            >
-                        </div>
-                        <div class="col-md-6">
-                          <h5>Sucursal</h5>
-                          <input 
-                            type="text" 
-                            class="form-control" 
-                            placeholder="Sucursal"
-                            >
-                        </div>
-                      </div>
-                      <hr class="separator" />
+                  <section>
+                    <div 
+                      id="collapseTwo" 
+                      class="panel-collapse collapse" 
+                      role="tabpanel" 
+                      aria-labelledby="headingTwo"
+                      >
                       <div class="row panel-body">
                         <div class="col-md-12">
                           <p>
-                            ¿Usas productos L´Oréal? Necesitamos los siguientes códigos para transferir las promociones auspiciadas por L´Oréal para llevarte más clientes. 
+                            Necesitamos estos datos para hacerte la transferencia quincenal de los clientes que paguen en línea tus servicios
                           </p>
                         </div>
-                      </div>
-                      <div class="row panel-body">
-                        <div class="col-md-6">
-                          <h5>Código Facturatario</h4>
-                          <input 
-                            type="number" 
-                            class="form-control" 
-                            placeholder="Código"
-                            >
+                        <hr class="separator" />
+                        <div class="row panel-body">
+                          <div class="col-md-6">
+                            <h5>Nombre del Banco</h5>
+                            <div class="form-group">
+                              <select class="form-control" id="exampleSelect1">
+                                <option>Nombre del Banco</option>
+                                <option>Banorte</option>
+                                <option>Banamex</option>
+                                <option>Bancomer</option>
+                                <option>Inbursa</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <h5>Titular de la Cuenta <span>(Como aparece en tu Estado de Cuenta)</span></h5>
+                            <input 
+                              type="text" 
+                              class="form-control" 
+                              placeholder="Nombre Titular"
+                              >
+                          </div>
                         </div>
-                        <div class="col-md-6">
-                          <h5>Código Destinatario</h5>
-                          <input 
-                            type="number" 
-                            class="form-control" 
-                            placeholder="Código"
-                            >
+                        <div class="row panel-body">
+                          <div class="col-md-6">
+                            <h5>Razón Soial</h5>
+                            <input 
+                              type="text" 
+                              class="form-control" 
+                              placeholder="Ej: Tequisco Ventures S.A. de C.V"
+                              >
+                          </div>
+                          <div class="col-md-6">
+                            <h5>RFC</h5>
+                            <input 
+                              type="text" 
+                              class="form-control" 
+                              placeholder="Ej: TVEGHKH5568"
+                              >
+                          </div>
                         </div>
-                      </div>
-                      <div class="row panel-body">
-                        <div class="col-md-12 text-right">
-                          <button class="button-pink">GUARDAR</button>
-                          <button class="button-pink">SIGUIENTE</button>
+                        <div class="row panel-body">
+                          <div class="col-md-6">
+                            <h5>Clabe</h5>
+                            <input 
+                              type="number" 
+                              class="form-control" 
+                              placeholder="Clabe"
+                              >
+                          </div>
+                          <div class="col-md-6">
+                            <h5>Sucursal</h5>
+                            <input 
+                              type="text" 
+                              class="form-control" 
+                              placeholder="Sucursal"
+                              >
+                          </div>
+                        </div>
+                        <hr class="separator" />
+                        <div class="row panel-body">
+                          <div class="col-md-12">
+                            <p>
+                              ¿Usas productos L´Oréal? Necesitamos los siguientes códigos para transferir las promociones auspiciadas por L´Oréal para llevarte más clientes. 
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row panel-body">
+                          <div class="col-md-6">
+                            <h5>Código Facturatario</h5>
+                            <input 
+                              type="number" 
+                              class="form-control" 
+                              placeholder="Código"
+                              >
+                          </div>
+                          <div class="col-md-6">
+                            <h5>Código Destinatario</h5>
+                            <input 
+                              type="number" 
+                              class="form-control" 
+                              placeholder="Código"
+                              >
+                          </div>
+                        </div>
+                        <div class="row panel-body">
+                          <div class="col-md-12 text-right">
+                            <button class="button-pink">GUARDAR</button>
+                            <button class="button-pink">SIGUIENTE</button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </section>
 
                 </div>
+
+                <section>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3>Resumen de Cobros</h3>
+                      <p>
+                        Transferencias realizadas a tu negocio.
+                      </p>
+                      <p>
+                        <strong>Seguridad Garantizada:</strong> 
+                        Los procesos están avalados por diversas certificaciones y auditorías para garantizar que la información se mantenga
+                        segura y encriptada. 
+                      </p>
+                      <hr class="separator" />
+                    </div>
+                  </div>
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <h4>Concepto</h4>
+                        </th>
+                        <th class="text-center">
+                          <h4>Importe</h4>
+                        </th>
+                        <th class="text-center">
+                          <h4>Desglose</h4>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Pago 03/02/2016</td>
+                        <td class="text-center">MXN538</td>
+                        <td class="text-center">
+                          <span 
+                            class="glyphicon glyphicon-th-list" 
+                            aria-hidden="true"
+                            role="button" 
+                            data-toggle="collapse" 
+                            data-parent="#accordion" 
+                            href="#collapseThree" 
+                            aria-expanded="true" 
+                            aria-controls="collapseOne"
+                            >
+                          </span>
+                           
+                        </td>
+
+                        <tbody
+                          id="collapseThree" 
+                          class="panel-collapse collapse in" 
+                          role="tabpanel" 
+                          aria-labelledby="headingOne"
+                          >
+                          <tr>
+                            <td>Listado de Movimientos de Cuenta</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>Balance Inicial</td>
+                            <td></td>
+                            <td class="text-center">MXN0</td>
+                          </tr>
+                          <tr>
+                            <td>Reserva #454 - Pago offline</td>
+                            <td class="text-center">MXN0</td>
+                            <td class="text-center">MXN0</td>
+                          </tr>
+                          <tr>
+                            <td>Comisiones servicio de reservas - Periodo 2015-10-16 a 2015-10-31</td>
+                            <td class="text-center">MXN0</td>
+                            <td class="text-center">MXN0</td>
+                          </tr>
+                          <tr>
+                            <td>Reserva #3472 - Pago offline</td>
+                            <td class="text-center">MXN0</td>
+                            <td class="text-center">MXN0</td>
+                          </tr>
+                          <tr>
+                            <td>Reserva #3473 - Pago offline</td>
+                            <td class="text-center">MXN0</td>
+                            <td class="text-center">MXN0</td>
+                          </tr>
+                          <tr>
+                            <td>Comisiones servicio de reservas - Periodo 2016-01-01 a 2016-01-15</td>
+                            <td class="text-center">MXN0</td>
+                            <td class="text-center">MXN0</td>
+                          </tr>
+                        </tbody>
+
+                      </tr>
+                      <tr>
+                        <td>Pago 03/02/2016</td>
+                        <td class="text-center">MXN538</td>
+                        <td class="text-center">
+                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Pago 03/02/2016</td>
+                        <td class="text-center">MXN538</td>
+                        <td class="text-center">
+                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Pago 03/02/2016</td>
+                        <td class="text-center">MXN538</td>
+                        <td class="text-center">
+                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Pago 03/02/2016</td>
+                        <td class="text-center">MXN538</td>
+                        <td class="text-center">
+                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Pago 03/02/2016</td>
+                        <td class="text-center">MXN538</td>
+                        <td class="text-center">
+                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Pago 03/02/2016</td>
+                        <td class="text-center">MXN538</td>
+                        <td class="text-center">
+                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  
+                </section>
 
               </div>
             </section>
