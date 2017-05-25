@@ -115,7 +115,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <h4>Nombres</h4>
+                  <h5>Nombres</h5>
                   <input 
                     type="text" 
                     class="form-control" 
@@ -123,7 +123,7 @@
                     >
                 </div>
                 <div class="col-md-4">
-                  <h4>Apellidos</h4>
+                  <h5>Apellidos</h5>
                   <input 
                     type="text" 
                     class="form-control" 
@@ -131,7 +131,7 @@
                     >
                 </div>
                 <div class="col-md-4">
-                  <h4>Email</h4>
+                  <h5>Email</h5>
                   <input 
                     type="email" 
                     class="form-control" 
@@ -141,7 +141,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <h4>Dirección</h4>
+                  <h5>Dirección</h5>
                   <input 
                     type="text" 
                     class="form-control" 
@@ -151,7 +151,7 @@
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <h4>País</h4>
+                  <h5>País</h5>
                   <div class="form-group">
                     <select class="form-control" id="exampleSelect1">
                       <option>País</option>
@@ -162,7 +162,7 @@
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <h4>Ciudad</h4>
+                  <h5>Ciudad</h5>
                   <input 
                     type="text" 
                     class="form-control" 
@@ -170,7 +170,7 @@
                     >
                 </div>
                 <div class="col-md-4">
-                  <h4>Teléfono</h4>
+                  <h5>Teléfono</h5>
                   <input 
                     type="number" 
                     class="form-control" 
@@ -181,7 +181,7 @@
               <hr />
               <div class="row">
                 <div class="col-md-6">
-                  <h4>Número de Tarjeta</h4>
+                  <h5>Número de Tarjeta</h5>
                   <input 
                     type="number" 
                     class="form-control" 
@@ -199,7 +199,7 @@
                 <div class="col-md-6">
                   <div class="row">
                     <div class="col-md-6">
-                      <h4>Fecha de expiración</h4>
+                      <h5>Fecha de expiración</h5>
                       <div>
                         <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                       </div>
@@ -219,7 +219,7 @@
                 <div class="col-md-6">
                   <div class="row">
                     <div class="col-md-6">
-                      <h4>Código de seguridad</h4>
+                      <h5>Código de seguridad</h5>
                       <input 
                         type="number" 
                         class="form-control" 
@@ -240,11 +240,13 @@
               </div>
             </section>
             
-            <section style="display: none;">
+            <section>
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                
                 <div class="panel panel-default">
+                  
                   <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
+                    <h5 class="panel-title">
                       <a 
                         role="button" 
                         data-toggle="collapse" 
@@ -255,17 +257,124 @@
                         >
                         Datos de Facturación
                       </a>
-                    </h4>
+                    </h5>
                   </div>
-                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                  <div 
+                    id="collapseOne" 
+                    class="panel-collapse collapse in" 
+                    role="tabpanel" 
+                    aria-labelledby="headingOne"
+                    >
+                    <div class="row panel-body">
+                      <div class="col-md-12">
+                        <p>
+                          Necesitamos estos datos para hacerte la factura de nuestro servicio a fin de mes:
+                        </p>
+                      </div>
+                      <hr class="separator" />
+                      <div class="row panel-body">
+                        <div class="col-md-6">
+                          <h5>Razón Soial</h4>
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="Ej: Tequisco Ventures S.A. de C.V"
+                            >
+                        </div>
+                        <div class="col-md-6">
+                          <h5>RFC</h5>
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="Ej: TVEGHKH5568"
+                            >
+                        </div>
+                      </div>
+                      <div class="row panel-body">
+                        <div class="col-md-12">
+                          <h5>Dirección de Facturación</h5>
+                        </div>
+                      </div>
+                      <div class="row panel-body">
+                        <div class="col-md-4">
+                          <h5>Calle</h4>
+                          <input 
+                            type="text" 
+                            class="form-control" 
+                            placeholder="Ej: Tonalá 10"
+                            >
+                        </div>
+                        <div class="col-md-4">
+                          <h5>Número Exterior</h4>
+                          <input 
+                            type="number" 
+                            class="form-control" 
+                            placeholder="Ej: 305"
+                            >
+                        </div>
+                        <div class="col-md-4">
+                          <h5>Número Interior</h4>
+                          <input 
+                            type="number" 
+                            class="form-control" 
+                            placeholder="Ej: 21"
+                            >
+                        </div>
+                      </div>
+                      <div class="row panel-body">
+                        <div class="col-md-4">
+                          <h5>Colonia</h4>
+                          <div class="form-group">
+                            <select class="form-control" id="exampleSelect1">
+                              <option>Condesa</option>
+                              <option>Roma</option>
+                              <option>Iztacalco</option>
+                              <option>Centro</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <h5>Código Postal</h4>
+                          <input 
+                            type="number" 
+                            class="form-control" 
+                            placeholder="Ej:06700"
+                            >
+                        </div>
+                        <div class="col-md-4">
+                          <h5>Teléfono</h4>
+                          <input 
+                            type="number" 
+                            class="form-control" 
+                            placeholder="Ej: 556578998"
+                            >
+                        </div>
+                      </div>
+                      <div class="row panel-body">
+                        <div class="col-md-12">
+                          <h5>Email de Facturación</h5>
+                          <input 
+                            type="email" 
+                            class="form-control" 
+                            placeholder="Ej: facturación@stylerz.com"
+                            >
+                        </div>
+                      </div>
+                      <div class="row panel-body">
+                        <div class="col-md-12 text-right">
+                          <button class="button-pink">GUARDAR</button>
+                        </div>
+                      </div>  
                     </div>
                   </div>
+
                 </div>
+
                 <div class="panel panel-default">
+                  
                   <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
+                    <h5 class="panel-title">
                       <a 
                         class="collapsed" 
                         role="button" 
@@ -277,14 +386,17 @@
                         >
                         Datos Bancarios
                       </a>
-                    </h4>
+                    </h5>
                   </div>
+
                   <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                     </div>
                   </div>
+
                 </div>
+
               </div>
             </section>
 
