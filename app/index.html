@@ -30,59 +30,61 @@
     <div class="container-fluid container-fluid--padding">
 
       <!-- Nav -->
-      <nav class="navbar navbar-inverse navbar-inverse--height">
+      <nav class="navbar navbar--bottom navbar-inverse navbar-inverse--height">
         <div class="row">
 
-          <div class="col-md-12">
+          <div class="col-md-9 col-xs-12">
             <div class="navbar__logo-drop">
               <div>
                 Logo
               </div>
-              <div class="dropdown">
-                <button 
-                  class="btn btn-default dropdown-toggle dropdown__button" 
-                  type="button"
-                  data-toggle="dropdown" 
-                  aria-haspopup="true" 
-                  aria-expanded="true"
-                  >
-                  STOA BEAUTY CENTER REVOLUCIÓN
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu--content" aria-labelledby="dropdownMenu1">
-                  <li>
-                    <a href="#" class="dropdown-menu--li">Ir a agenda</a>
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="#" class="dropdown-menu--li">Editar perfil</a>
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="#" class="dropdown-menu--li">Mis profesionales</a>
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="#" class="dropdown-menu--li">Mis servicios</a>
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="#" class="dropdown-menu--li">Asignacion Profesionales</a>
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="#" class="dropdown-menu--li">Galeria de servicios</a>
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="#" class="dropdown-menu--li">Contabilidad</a>
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="#">Salir</a>
-                  </li>
-                </ul>
-              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="dropdown navbar__logo-drop">
+              <button 
+                class="btn btn-default dropdown-toggle dropdown__button pull-right" 
+                type="button"
+                data-toggle="dropdown" 
+                aria-haspopup="true" 
+                aria-expanded="true"
+                >
+                STOA BEAUTY CENTER REVOLUCIÓN
+                <span class="caret dropdown__button-caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu__content" aria-labelledby="dropdownMenu1">
+                <li>
+                  <a href="#" class="dropdown-menu__li">Ir a agenda</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#" class="dropdown-menu__li">Editar perfil</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#" class="dropdown-menu__li">Mis profesionales</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#" class="dropdown-menu__li">Mis servicios</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#" class="dropdown-menu__li">Asignacion Profesionales</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#" class="dropdown-menu__li">Galeria de servicios</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#" class="dropdown-menu__li">Contabilidad</a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#">Salir</a>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -90,22 +92,39 @@
       </nav>
 
       <section>
-        <div class="row">
+        <div class="row strech">
 
-          <div class="col-md-3" style="border-right: 3px solid black">
-            <h1>Contabilidad</h1>
+          <div class="col-md-3 navigator">
+            <div class="list-group">
+              <div class="navigator__title">
+                <h2 class="navigator__title--font">Contabilidad</h2>
+              </div>
+              <a class="list-group-item navigator__li navigator__li--padding" href="#credit-card">
+                Agregar Tarjeta de Crédito
+                <span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span>
+              </a>
+              <a class="list-group-item navigator__li navigator__li--padding" href="#dates">
+                Datos de Facturación y Bancarios
+                <span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span>
+              </a>
+              <a class="list-group-item navigator__li navigator__li--padding" href="#resume">
+                Resumen Cobros
+                <span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span>
+              </a>
+            </div>
           </div>
 
           <div class="col-md-9">
 
-            <section style="display: none;">
+            <section class="section scroll">
               <div class="row">
                 <div class="col-md-12">
-                  <h3>Tarjeta de Crédito</h3>
-                  <p>
+                  <a name="credit-card"></a>
+                  <h3 class="section__title">Tarjeta de Crédito</h3>
+                  <p class="section__text">
                     Agrega los datos de tu tarjeta de crédito para que sea más rápido y fácil el proceso de cobro a tu negocio.
                   </p>
-                  <p>
+                  <p class="section__text">
                     <strong>Seguridad Garantizada:</strong> 
                     Los procesos están avalados por diversas certificaciones y auditorías para garantizar que la información se mantenga
                     segura y encriptada. 
@@ -118,7 +137,7 @@
                   <h5>Nombres</h5>
                   <input 
                     type="text" 
-                    class="form-control" 
+                    class="form-control section__input" 
                     placeholder="Nombres"
                     >
                 </div>
@@ -126,7 +145,7 @@
                   <h5>Apellidos</h5>
                   <input 
                     type="text" 
-                    class="form-control" 
+                    class="form-control section__input" 
                     placeholder="Apellidos"
                     >
                 </div>
@@ -134,7 +153,7 @@
                   <h5>Email</h5>
                   <input 
                     type="email" 
-                    class="form-control" 
+                    class="form-control section__input" 
                     placeholder="Email"
                     >
                 </div>
@@ -144,7 +163,7 @@
                   <h5>Dirección</h5>
                   <input 
                     type="text" 
-                    class="form-control" 
+                    class="form-control section__input" 
                     placeholder="Dirección"
                     >
                 </div>
@@ -152,20 +171,18 @@
               <div class="row">
                 <div class="col-md-4">
                   <h5>País</h5>
-                  <div class="form-group">
-                    <select class="form-control" id="exampleSelect1">
-                      <option>País</option>
-                      <option>México</option>
-                      <option>Cuba</option>
-                      <option>Venezuela</option>
-                    </select>
-                  </div>
+                  <select class="section__select">
+                    <option>País</option>
+                    <option>México</option>
+                    <option>Cuba</option>
+                    <option>Venezuela</option>
+                  </select>
                 </div>
                 <div class="col-md-4">
                   <h5>Ciudad</h5>
                   <input 
                     type="text" 
-                    class="form-control" 
+                    class="form-control section__input" 
                     placeholder="Ciudad"
                     >
                 </div>
@@ -173,18 +190,18 @@
                   <h5>Teléfono</h5>
                   <input 
                     type="number" 
-                    class="form-control" 
+                    class="form-control section__input" 
                     placeholder="Teléfono"
                     >
                 </div>
               </div>
               <hr />
-              <div class="row">
+              <div class="row section__inputs-center">
                 <div class="col-md-6">
                   <h5>Número de Tarjeta</h5>
                   <input 
                     type="number" 
-                    class="form-control" 
+                    class="form-control section__input" 
                     placeholder="0000-0000-0000-0000"
                     >
                 </div>
@@ -197,37 +214,37 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="row">
+                  <div class="row section__inputs-center">
                     <div class="col-md-6">
                       <h5>Fecha de expiración</h5>
                       <div>
-                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                        <input class="form-control section__input" type="date">
                       </div>
                     </div>
                     <div class="col-md-4 offset-md-2">
-                      <div class="form-group">
-                        <select class="form-control" id="exampleSelect1">
-                          <option>2021</option>
-                          <option>2022</option>
-                          <option>2023</option>
-                          <option>2024</option>
-                        </select>
-                      </div>
+                      <select class="section__select">
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="row">
+                  <div class="row section__inputs-center">
                     <div class="col-md-6">
                       <h5>Código de seguridad</h5>
                       <input 
                         type="number" 
-                        class="form-control" 
-                        placeholder="Teléfono"
+                        class="form-control section__input" 
+                        placeholder="000"
                         >
                     </div>
                     <div class="col-md-4">
-                      <p>¿Que es esto?</p>
+                      <p class="section__parraf">
+                        <a class="section__parraf--link" href="#">¿Que es esto?</a>
+                      </p>
                     </div> 
                   </div>
                 </div>   
@@ -240,12 +257,13 @@
               </div>
             </section>
             
-            <section>
+            <section class="section--accordion">
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 
-                <div class="panel panel-default">
+                <div class="panel-default">
                   
-                  <div class="panel-heading" role="tab" id="headingOne">
+                  <div class="panel-heading navigator__li--padding" role="tab" id="headingOne">
+                    <a name="dates"></a>
                     <h3 class="panel-title">
                       <a 
                         role="button" 
@@ -268,19 +286,19 @@
                       aria-labelledby="headingOne"
                       >
 
-                      <div class="row panel-body">
+                      <div class="row panel-body--padding">
                         <div class="col-md-12">
-                          <p>
+                          <p class="section__text section__text--padding-left">
                             Necesitamos estos datos para hacerte la factura de nuestro servicio a fin de mes:
                           </p>
+                          <hr class="separator" />
                         </div>
-                        <hr class="separator" />
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-6">
-                            <h5>Razón Soial</h5>
+                            <h5>Razón Social</h5>
                             <input 
                               type="text" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej: Tequisco Ventures S.A. de C.V"
                               >
                           </div>
@@ -288,22 +306,22 @@
                             <h5>RFC</h5>
                             <input 
                               type="text" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej: TVEGHKH5568"
                               >
                           </div>
                         </div>
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-12">
                             <h5>Dirección de Facturación</h5>
                           </div>
                         </div>
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-4">
                             <h5>Calle</h5>
                             <input 
                               type="text" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej: Tonalá 10"
                               >
                           </div>
@@ -311,7 +329,7 @@
                             <h5>Número Exterior</h5>
                             <input 
                               type="number" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej: 305"
                               >
                           </div>
@@ -319,16 +337,16 @@
                             <h5>Número Interior</h5>
                             <input 
                               type="number" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej: 21"
                               >
                           </div>
                         </div>
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-4">
                             <h5>Colonia</h5>
                             <div class="form-group">
-                              <select class="form-control" id="exampleSelect1">
+                              <select class="section__select">
                                 <option>Colonia</option>
                                 <option>Condesa</option>
                                 <option>Roma</option>
@@ -341,7 +359,7 @@
                             <h5>Código Postal</h5>
                             <input 
                               type="number" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej:06700"
                               >
                           </div>
@@ -349,22 +367,22 @@
                             <h5>Teléfono</h5>
                             <input 
                               type="number" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej: 556578998"
                               >
                           </div>
                         </div>
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-12">
                             <h5>Email de Facturación</h5>
                             <input 
                               type="email" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej: facturación@stylerz.com"
                               >
                           </div>
                         </div>
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-12 text-right">
                             <button class="button-pink">GUARDAR</button>
                           </div>
@@ -375,9 +393,9 @@
 
                 </div>
 
-                <div class="panel panel-default">
+                <div class="panel-default">
                   
-                  <div class="panel-heading" role="tab" id="headingTwo">
+                  <div class="panel-heading navigator__li--padding" role="tab" id="headingTwo">
                     <h3 class="panel-title">
                       <a 
                         class="collapsed" 
@@ -400,18 +418,18 @@
                       role="tabpanel" 
                       aria-labelledby="headingTwo"
                       >
-                      <div class="row panel-body">
+                      <div class="row panel-body--padding">
                         <div class="col-md-12">
-                          <p>
+                          <p class="section__text section__text--padding-left">
                             Necesitamos estos datos para hacerte la transferencia quincenal de los clientes que paguen en línea tus servicios
                           </p>
                         </div>
                         <hr class="separator" />
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-6">
                             <h5>Nombre del Banco</h5>
                             <div class="form-group">
-                              <select class="form-control" id="exampleSelect1">
+                              <select class="section__select">
                                 <option>Nombre del Banco</option>
                                 <option>Banorte</option>
                                 <option>Banamex</option>
@@ -424,17 +442,17 @@
                             <h5>Titular de la Cuenta <span>(Como aparece en tu Estado de Cuenta)</span></h5>
                             <input 
                               type="text" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Nombre Titular"
                               >
                           </div>
                         </div>
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-6">
                             <h5>Razón Soial</h5>
                             <input 
                               type="text" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej: Tequisco Ventures S.A. de C.V"
                               >
                           </div>
@@ -442,17 +460,17 @@
                             <h5>RFC</h5>
                             <input 
                               type="text" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Ej: TVEGHKH5568"
                               >
                           </div>
                         </div>
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-6">
                             <h5>Clabe</h5>
                             <input 
                               type="number" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Clabe"
                               >
                           </div>
@@ -460,25 +478,25 @@
                             <h5>Sucursal</h5>
                             <input 
                               type="text" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Sucursal"
                               >
                           </div>
                         </div>
                         <hr class="separator" />
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-12">
                             <p>
                               ¿Usas productos L´Oréal? Necesitamos los siguientes códigos para transferir las promociones auspiciadas por L´Oréal para llevarte más clientes. 
                             </p>
                           </div>
                         </div>
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-6">
                             <h5>Código Facturatario</h5>
                             <input 
                               type="number" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Código"
                               >
                           </div>
@@ -486,12 +504,12 @@
                             <h5>Código Destinatario</h5>
                             <input 
                               type="number" 
-                              class="form-control" 
+                              class="form-control section__input" 
                               placeholder="Código"
                               >
                           </div>
                         </div>
-                        <div class="row panel-body">
+                        <div class="row panel-body--padding">
                           <div class="col-md-12 text-right">
                             <button class="button-pink">GUARDAR</button>
                             <button class="button-pink">SIGUIENTE</button>
@@ -503,155 +521,139 @@
 
                 </div>
 
-                <section>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <h3>Resumen de Cobros</h3>
-                      <p>
-                        Transferencias realizadas a tu negocio.
-                      </p>
-                      <p>
-                        <strong>Seguridad Garantizada:</strong> 
-                        Los procesos están avalados por diversas certificaciones y auditorías para garantizar que la información se mantenga
-                        segura y encriptada. 
-                      </p>
-                      <hr class="separator" />
-                    </div>
-                  </div>
-
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>
-                          <h4>Concepto</h4>
-                        </th>
-                        <th class="text-center">
-                          <h4>Importe</h4>
-                        </th>
-                        <th class="text-center">
-                          <h4>Desglose</h4>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Pago 03/02/2016</td>
-                        <td class="text-center">MXN538</td>
-                        <td class="text-center">
-                          <span 
-                            class="glyphicon glyphicon-th-list" 
-                            aria-hidden="true"
-                            role="button" 
-                            data-toggle="collapse" 
-                            data-parent="#accordion" 
-                            href="#collapseThree" 
-                            aria-expanded="true" 
-                            aria-controls="collapseOne"
-                            >
-                          </span>
-                           
-                        </td>
-
-                        <tbody
-                          id="collapseThree" 
-                          class="panel-collapse collapse in" 
-                          role="tabpanel" 
-                          aria-labelledby="headingOne"
-                          >
-                          <tr>
-                            <td>Listado de Movimientos de Cuenta</td>
-                            <td></td>
-                            <td></td>
-                          </tr>
-                          <tr>
-                            <td>Balance Inicial</td>
-                            <td></td>
-                            <td class="text-center">MXN0</td>
-                          </tr>
-                          <tr>
-                            <td>Reserva #454 - Pago offline</td>
-                            <td class="text-center">MXN0</td>
-                            <td class="text-center">MXN0</td>
-                          </tr>
-                          <tr>
-                            <td>Comisiones servicio de reservas - Periodo 2015-10-16 a 2015-10-31</td>
-                            <td class="text-center">MXN0</td>
-                            <td class="text-center">MXN0</td>
-                          </tr>
-                          <tr>
-                            <td>Reserva #3472 - Pago offline</td>
-                            <td class="text-center">MXN0</td>
-                            <td class="text-center">MXN0</td>
-                          </tr>
-                          <tr>
-                            <td>Reserva #3473 - Pago offline</td>
-                            <td class="text-center">MXN0</td>
-                            <td class="text-center">MXN0</td>
-                          </tr>
-                          <tr>
-                            <td>Comisiones servicio de reservas - Periodo 2016-01-01 a 2016-01-15</td>
-                            <td class="text-center">MXN0</td>
-                            <td class="text-center">MXN0</td>
-                          </tr>
-                        </tbody>
-
-                      </tr>
-                      <tr>
-                        <td>Pago 03/02/2016</td>
-                        <td class="text-center">MXN538</td>
-                        <td class="text-center">
-                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>Pago 03/02/2016</td>
-                        <td class="text-center">MXN538</td>
-                        <td class="text-center">
-                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>Pago 03/02/2016</td>
-                        <td class="text-center">MXN538</td>
-                        <td class="text-center">
-                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>Pago 03/02/2016</td>
-                        <td class="text-center">MXN538</td>
-                        <td class="text-center">
-                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>Pago 03/02/2016</td>
-                        <td class="text-center">MXN538</td>
-                        <td class="text-center">
-                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>Pago 03/02/2016</td>
-                        <td class="text-center">MXN538</td>
-                        <td class="text-center">
-                          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 
-                        </td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-
-                  
-                </section>
-
               </div>
             </section>
+
+            <section class="section">
+              <div class="row">
+                <div class="col-md-12">
+                  <a name="resume"></a>
+                  <h3 class="section__title">Resumen de Cobros</h3>
+                  <p class="section__text">
+                    Transferencias realizadas a tu negocio.
+                  </p>
+                  <hr class="separator" />
+                </div>
+              </div>
+
+              <table class="table table-content">
+                <thead>
+                  <tr>
+                    <th class="table__th-50">
+                      <h4>Concepto</h4>
+                    </th>
+                    <th class="text-center table__th-25">
+                      <h4>Importe</h4>
+                    </th>
+                    <th class="text-center table__th-25">
+                      <h4>Desglose</h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr role="tab">
+                    <td>Pago 03/02/2016</td>
+                    <td class="text-center">MXN538</td>
+                    <td class="text-center">
+                      <span 
+                        class="glyphicon glyphicon-th-list collapsed table__icon-button"
+                        role="button" 
+                        data-toggle="collapse" 
+                        href="#collapseExample" 
+                        aria-expanded="false" 
+                        aria-controls="collapseExample"
+                        >
+                      </span>
+                       
+                    </td>
+                    <tbody class="collapse" id="collapseExample">
+                      <tr>
+                        <td>Listado de Movimientos de Cuenta <br>Balance Inicial</td>
+                        <td></td>
+                        <td class="text-center">MXN0</td>
+                      </tr>
+                      <tr>
+                        <td>Reserva #454 - Pago offline</td>
+                        <td class="text-center">MXN0</td>
+                        <td class="text-center">MXN0</td>
+                      </tr>
+                      <tr>
+                        <td>Comisiones servicio de reservas - Periodo 2015-10-16 a 2015-10-31</td>
+                        <td class="text-center">MXN0</td>
+                        <td class="text-center">MXN0</td>
+                      </tr>
+                      <tr>
+                        <td>Reserva #3472 - Pago offline</td>
+                        <td class="text-center">MXN0</td>
+                        <td class="text-center">MXN0</td>
+                      </tr>
+                      <tr>
+                        <td>Reserva #3473 - Pago offline</td>
+                        <td class="text-center">MXN0</td>
+                        <td class="text-center">MXN0</td>
+                      </tr>
+                      <tr>
+                        <td>Comisiones servicio de reservas - Periodo 2016-01-01 a 2016-01-15</td>
+                        <td class="text-center">MXN0</td>
+                        <td class="text-center">MXN0</td>
+                      </tr>
+                    </tbody>
+
+                  </tr>
+                  <tr>
+                    <td>Pago 03/02/2016</td>
+                    <td class="text-center">MXN538</td>
+                    <td class="text-center">
+                      <span class="glyphicon glyphicon-th-list table__icon-button" aria-hidden="true"></span> 
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Pago 03/02/2016</td>
+                    <td class="text-center">MXN538</td>
+                    <td class="text-center">
+                      <span class="glyphicon glyphicon-th-list table__icon-button" aria-hidden="true"></span> 
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Pago 03/02/2016</td>
+                    <td class="text-center">MXN538</td>
+                    <td class="text-center">
+                      <span class="glyphicon glyphicon-th-list table__icon-button" aria-hidden="true"></span> 
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Pago 03/02/2016</td>
+                    <td class="text-center">MXN538</td>
+                    <td class="text-center">
+                      <span class="glyphicon glyphicon-th-list table__icon-button" aria-hidden="true"></span> 
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Pago 03/02/2016</td>
+                    <td class="text-center">MXN538</td>
+                    <td class="text-center">
+                      <span class="glyphicon glyphicon-th-list table__icon-button" aria-hidden="true"></span> 
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Pago 03/02/2016</td>
+                    <td class="text-center">MXN538</td>
+                    <td class="text-center">
+                      <span class="glyphicon glyphicon-th-list table__icon-button" aria-hidden="true"></span> 
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              
+            </section>
+
 
           </div>
 

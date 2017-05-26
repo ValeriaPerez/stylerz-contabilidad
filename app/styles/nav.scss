@@ -1,0 +1,47 @@
+.navbar {
+  &--bottom {
+    margin-bottom: 0;
+  }
+
+  &-inverse {
+    &--height {
+      height: 100px;
+    }
+  }
+
+  &__logo-drop {
+    padding: 30px 30px;
+    color: #fff; 
+  }
+}
+
+.dropdown {
+  &__button {
+    background-color: #000;
+    border-color: transparent;
+    color: #fff;
+
+    &:hover {
+      background-color: #000;
+      border-color: #fff;
+      color: #fff;
+    }
+
+    &-caret {
+      margin-left: 10px!important;
+    }
+  }
+
+  &-menu {
+    &__content{
+      width: 100%;
+      border-radius: 0;
+      text-transform: uppercase;
+      margin: 20px 0 0;
+    }
+
+    &__li {
+      padding: 10px 20px;
+    }
+  }
+} 

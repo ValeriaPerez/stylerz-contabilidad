@@ -1,0 +1,29 @@
+.table {
+
+	&-content {
+		width: 100%;
+	} 
+
+	&__th-50 {
+		width: 50%;
+	}
+
+	&__th-25 {
+		width: 25%;
+	}
+
+	&__icon-button {
+		border: 1px solid #9E9E9E;
+    padding: 7px;
+    font-size: 10px;
+
+    &:hover {
+      background-color: #9E9E9E;
+      color: #fff;
+    }
+	}
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+}
