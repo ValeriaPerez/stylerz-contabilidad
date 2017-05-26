@@ -1,0 +1,49 @@
+.section {
+	padding: 10px 35px 10px 20px;
+
+	&--accordion {
+		padding: 0;
+		margin-left: -15px;
+	}
+
+	&__title {
+		font-size: 23px;
+		margin-bottom: 40px;
+	}
+
+	&__text {
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		&--padding-left {
+			padding-left: 15px;
+		}
+	}
+
+	&__input {
+		border-radius: 0;
+    padding: 22px 17px;
+	}
+
+	&__select {
+		width: 100%;
+    height: 45px;
+    background: #fff;
+	}
+
+	&__inputs-center {
+		display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+	}
+
+	&__parraf {
+  	border-bottom: 1px solid #000;
+    display: inline-block;
+    margin-bottom: 15px;
+    
+    &--link {
+    	color: #000;
+    }
+  }
+}
