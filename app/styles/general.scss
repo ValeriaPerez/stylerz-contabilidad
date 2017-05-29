@@ -6,22 +6,50 @@
 .container-fluid--padding {
   padding-left: 0;
   padding-right: 0;
+  overflow-y: scroll;
+  overflow: hidden;
 }
 
-.button-pink {
-  background-color: #f37d82;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 30px 5px;
-  border: none;
-  border-radius: 5px;
+
+.content-button {
+  text-align: right;
+
+  &--pink {
+    background-color: #f37d82;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 30px 5px;
+    border: none;
+    border-radius: 5px;
+
+    @media only screen and (max-width: 48em) {
+      padding: 12px 22px;
+    }
+  }
+
+  @media only screen and (max-width: 48em) {
+    text-align: center;
+  }
 }
 
 .panel-body--padding {
 	padding: 10px 30px;
+
+  @media only screen and (max-width: 48em) {
+    padding: 10px 10px 10px 17px;
+  }
 }
 
 .strech {
 	display: flex;
   align-items: stretch;
+  margin: 0;
+
+  @media only screen and (max-width: 48em) {
+    flex-direction: column;
+  }
+}
+
+.margin {
+  margin: 0;
 }
