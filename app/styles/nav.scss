@@ -11,7 +11,12 @@
 
   &__logo-drop {
     padding: 30px 30px;
-    color: #fff; 
+    color: #fff;
+
+    @media only screen and (max-width: 48em) {
+      padding: 10px 10px;
+      text-align: center;
+    }
   }
 }
 
@@ -20,6 +25,10 @@
     background-color: #000;
     border-color: transparent;
     color: #fff;
+
+    @media only screen and (max-width: 48em) {
+      margin-right: 10px;
+    }
 
     &:hover {
       background-color: #000;
